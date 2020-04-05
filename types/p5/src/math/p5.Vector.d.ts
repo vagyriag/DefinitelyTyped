@@ -4,6 +4,14 @@ import * as p5 from '../../index';
 
 declare module '../../index' {
     class Vector {
+        
+        /**
+         * @param x component of the vector (Optional)
+         * @param y component of the vector (Optional)
+         * @param z component of the vector (Optional)
+         */
+        constructor(x?: number, y?: number, z?: number): Vector;
+        
         /**
          *   Adds x, y, and z components to a vector, adds one
          *   vector to another, or adds two independent vectors
